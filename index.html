@@ -5,47 +5,67 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
       <title>Romyk</title>
-      <meta name="description" content="Website es krim lezat">
-      
+      <meta name="keywords" content="">
+      <meta name="description" content="Es krim lezat dan berkualitas">
+      <meta name="author" content="">
       <!-- bootstrap css -->
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
       <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- font css -->
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+      <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
    </head>
-
    <body>
       <div class="header_section">
          <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                <a class="navbar-brand"href="index.html"><img src="images/logo.png"></a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                </button>
-
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto">
-                     <li class="nav-item active"><a class="nav-link" href="index.html">Beranda</a></li>
-                     <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
-                     <li class="nav-item"><a class="nav-link" href="icecream.html">Es Krim</a></li>
-                     <li class="nav-item"><a class="nav-link" href="services.html">Layanan</a></li>
-                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                     <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="about.html">Tentang</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="icecream.html">Es Krim</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="services.html">Layanan</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontak</a>
+                     </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
-                     <div class="login_bt"><a href="#">Masuk <i class="fa fa-user"></i></a></div>
+                     <div class="login_bt"><a href="#">Masuk <span style="color: #222222;"><i class="fa fa-user" aria-hidden="true"></i></span></a></div>
                      <div class="fa fa-search form-control-feedback"></div>
                   </form>
                </div>
             </nav>
          </div>
 
-         <!-- banner -->
+         <!-- banner section start --> 
          <div class="banner_section layout_padding">
             <div class="container">
                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -55,17 +75,17 @@
                      <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li>
                      <li data-target="#carouselExampleIndicators" data-slide-to="3">04</li>
                   </ol>
-
                   <div class="carousel-inner">
+
                      <div class="carousel-item active">
                         <div class="row">
                            <div class="col-sm-6">
-                              <h1 class="banner_taital">Es Krim</h1>
-                              <p class="banner_text">Nikmati es krim lezat dengan rasa manis dan segar yang dibuat dari bahan berkualitas untuk menemani harimu.</p>
+                              <h1 class="banner_taital">Es Krim Lezat</h1>
+                              <p class="banner_text">Nikmati es krim dengan rasa manis dan segar yang dibuat dari bahan berkualitas terbaik untuk menemani harimu.</p>
                               <div class="started_text"><a href="#">Pesan Sekarang</a></div>
                            </div>
                            <div class="col-sm-6">
-                              <img src="images/banner-img.png">
+                              <div class="banner_img"><img src="images/banner-img.png"></div>
                            </div>
                         </div>
                      </div>
@@ -73,12 +93,12 @@
                      <div class="carousel-item">
                         <div class="row">
                            <div class="col-sm-6">
-                              <h1 class="banner_taital">Es Krim</h1>
-                              <p class="banner_text">Rasakan kelezatan es krim dengan berbagai pilihan rasa favorit yang menyegarkan.</p>
+                              <h1 class="banner_taital">Es Krim Favorit</h1>
+                              <p class="banner_text">Berbagai pilihan rasa es krim yang lezat dan menyegarkan siap menemani setiap momen spesialmu.</p>
                               <div class="started_text"><a href="#">Pesan Sekarang</a></div>
                            </div>
                            <div class="col-sm-6">
-                              <img src="images/banner-img.png">
+                              <div class="banner_img"><img src="images/banner-img.png"></div>
                            </div>
                         </div>
                      </div>
@@ -86,12 +106,12 @@
                      <div class="carousel-item">
                         <div class="row">
                            <div class="col-sm-6">
-                              <h1 class="banner_taital">Es Krim</h1>
-                              <p class="banner_text">Pilihan es krim terbaik dengan tekstur lembut dan rasa yang menggugah selera.</p>
+                              <h1 class="banner_taital">Es Krim Premium</h1>
+                              <p class="banner_text">Dibuat dengan bahan pilihan dan kualitas terbaik, memberikan rasa lembut dan nikmat di setiap gigitan.</p>
                               <div class="started_text"><a href="#">Pesan Sekarang</a></div>
                            </div>
                            <div class="col-sm-6">
-                              <img src="images/banner-img.png">
+                              <div class="banner_img"><img src="images/banner-img.png"></div>
                            </div>
                         </div>
                      </div>
@@ -99,15 +119,16 @@
                      <div class="carousel-item">
                         <div class="row">
                            <div class="col-sm-6">
-                              <h1 class="banner_taital">Es Krim</h1>
-                              <p class="banner_text">Segarnya es krim cocok dinikmati kapan saja bersama teman dan keluarga.</p>
+                              <h1 class="banner_taital">Es Krim Segar</h1>
+                              <p class="banner_text">Cocok dinikmati kapan saja bersama teman dan keluarga dengan sensasi rasa yang menyenangkan.</p>
                               <div class="started_text"><a href="#">Pesan Sekarang</a></div>
                            </div>
                            <div class="col-sm-6">
-                              <img src="images/banner-img.png">
+                              <div class="banner_img"><img src="images/banner-img.png"></div>
                            </div>
                         </div>
                      </div>
+
                   </div>
                </div>
             </div>
@@ -119,11 +140,11 @@
          <div class="container">
             <div class="row">
                <div class="col-md-6">
-                  <img src="images/about-img.png">
+                  <div class="about_img"><img src="images/about-img.png"></div>
                </div>
                <div class="col-md-6">
                   <h1 class="about_taital">Tentang Es Krim Kami</h1>
-                  <p class="about_text">Kami menyediakan berbagai varian es krim dengan rasa lezat, dibuat dari bahan pilihan dan kualitas terbaik untuk kepuasan Anda.</p>
+                  <p class="about_text">Kami menghadirkan es krim dengan berbagai varian rasa yang lezat, dibuat dari bahan pilihan dengan kualitas terbaik untuk memberikan pengalaman menikmati es krim yang tak terlupakan.</p>
                   <div class="read_bt_1"><a href="#">Selengkapnya</a></div>
                </div>
             </div>
@@ -133,34 +154,71 @@
       <!-- produk -->
       <div class="cream_section layout_padding">
          <div class="container">
-            <h1 class="cream_taital">Es Krim Unggulan Kami</h1>
-            <p class="cream_text">Pilihan es krim terbaik dengan rasa istimewa</p>
-
             <div class="row">
-               <div class="col-md-4">
-                  <div class="cream_box">
-                     <img src="images/img-1.png">
-                     <div class="price_text">$10</div>
-                     <h6>Es Krim Stroberi</h6>
-                     <div class="cart_bt"><a href="#">Tambah ke Keranjang</a></div>
+               <div class="col-md-12">
+                  <h1 class="cream_taital">Es Krim Unggulan Kami</h1>
+                  <p class="cream_text">Pilihan es krim terbaik dengan rasa istimewa</p>
+               </div>
+            </div>
+
+            <div class="cream_section_2">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="cream_box">
+                        <div class="cream_img"><img src="images/img-1.png"></div>
+                        <div class="price_text">$10</div>
+                        <h6 class="strawberry_text">Es Krim Stroberi</h6>
+                        <div class="cart_bt"><a href="#">Tambah ke Keranjang</a></div>
+                     </div>
+                  </div>
+
+                  <div class="col-md-4">
+                     <div class="cream_box">
+                        <div class="cream_img"><img src="images/img-2.png"></div>
+                        <div class="price_text">$10</div>
+                        <h6 class="strawberry_text">Es Krim Stroberi</h6>
+                        <div class="cart_bt"><a href="#">Tambah ke Keranjang</a></div>
+                     </div>
+                  </div>
+
+                  <div class="col-md-4">
+                     <div class="cream_box">
+                        <div class="cream_img"><img src="images/img-1.png"></div>
+                        <div class="price_text">$10</div>
+                        <h6 class="strawberry_text">Es Krim Stroberi</h6>
+                        <div class="cart_bt"><a href="#">Tambah ke Keranjang</a></div>
+                     </div>
                   </div>
                </div>
+            </div>
 
-               <div class="col-md-4">
-                  <div class="cream_box">
-                     <img src="images/img-2.png">
-                     <div class="price_text">$10</div>
-                     <h6>Es Krim Stroberi</h6>
-                     <div class="cart_bt"><a href="#">Tambah ke Keranjang</a></div>
+            <div class="cream_section_2">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="cream_box">
+                        <div class="cream_img"><img src="images/img-3.png"></div>
+                        <div class="price_text">$10</div>
+                        <h6 class="strawberry_text">Es Krim Stroberi</h6>
+                        <div class="cart_bt"><a href="#">Tambah ke Keranjang</a></div>
+                     </div>
                   </div>
-               </div>
 
-               <div class="col-md-4">
-                  <div class="cream_box">
-                     <img src="images/img-1.png">
-                     <div class="price_text">$10</div>
-                     <h6>Es Krim Stroberi</h6>
-                     <div class="cart_bt"><a href="#">Tambah ke Keranjang</a></div>
+                  <div class="col-md-4">
+                     <div class="cream_box">
+                        <div class="cream_img"><img src="images/img-4.png"></div>
+                        <div class="price_text">$10</div>
+                        <h6 class="strawberry_text">Es Krim Stroberi</h6>
+                        <div class="cart_bt"><a href="#">Tambah ke Keranjang</a></div>
+                     </div>
+                  </div>
+
+                  <div class="col-md-4">
+                     <div class="cream_box">
+                        <div class="cream_img"><img src="images/img-5.png"></div>
+                        <div class="price_text">$10</div>
+                        <h6 class="strawberry_text">Es Krim Stroberi</h6>
+                        <div class="cart_bt"><a href="#">Tambah ke Keranjang</a></div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -172,27 +230,55 @@
       <!-- services -->
       <div class="services_section layout_padding">
          <div class="container">
-            <h1 class="services_taital">Layanan Es Krim Kami</h1>
-            <p class="services_text">Kami menyediakan layanan terbaik untuk Anda</p>
-
             <div class="row">
-               <div class="col-md-4">
-                  <div class="services_box">
-                     <h5>Es Krim Cookies</h5>
-                     <p>Es krim lezat dengan topping menarik dan rasa yang menggoda.</p>
+               <div class="col-md-12">
+                  <h1 class="services_taital">Layanan Es Krim Kami</h1>
+                  <p class="services_text">Kami menyediakan layanan terbaik untuk Anda</p>
+               </div>
+            </div>
+
+            <div class="services_section_2">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="services_box">
+                        <h5 class="tasty_text"><span class="icon_img"><img src="images/icon-1.png"></span>Es Krim Cookies</h5>
+                        <p class="lorem_text">Es krim lezat dengan topping menarik dan rasa yang menggoda selera.</p>
+                     </div>
+                  </div>
+
+                  <div class="col-md-4">
+                     <div class="services_box">
+                        <h5 class="tasty_text"><span class="icon_img"><img src="images/icon-2.png"></span>Es Krim Cookies</h5>
+                        <p class="lorem_text">Es krim lezat dengan topping menarik dan rasa yang menggoda selera.</p>
+                     </div>
+                  </div>
+
+                  <div class="col-md-4">
+                     <div class="services_box">
+                        <h5 class="tasty_text"><span class="icon_img"><img src="images/icon-1.png"></span>Es Krim Cookies</h5>
+                        <p class="lorem_text">Es krim lezat dengan topping menarik dan rasa yang menggoda selera.</p>
+                     </div>
                   </div>
                </div>
-               <div class="col-md-4">
-                  <div class="services_box">
-                     <h5>Es Krim Cookies</h5>
-                     <p>Es krim lezat dengan topping menarik dan rasa yang menggoda.</p>
-                  </div>
+            </div>
+
+            <div class="seemore_bt"><a href="#">Selengkapnya</a></div>
+         </div>
+      </div>
+
+      <!-- testimonial -->
+      <div class="testimonial_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="testimonial_taital">Testimoni</h1>
                </div>
-               <div class="col-md-4">
-                  <div class="services_box">
-                     <h5>Es Krim Cookies</h5>
-                     <p>Es krim lezat dengan topping menarik dan rasa yang menggoda.</p>
-                  </div>
+            </div>
+
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <p class="testimonial_text">Es krimnya sangat enak dan menyegarkan, cocok dinikmati kapan saja. Pelayanannya juga ramah dan cepat.</p>
+                  <h4 class="client_name">Marri Fen</h4>
                </div>
             </div>
          </div>
@@ -201,13 +287,13 @@
       <!-- contact -->
       <div class="contact_section layout_padding">
          <div class="container">
-            <h1>Hubungi Kami</h1>
-            <form>
-               <input type="text" placeholder="Nama"><br>
-               <input type="text" placeholder="Email"><br>
-               <input type="text" placeholder="Nomor Telepon"><br>
-               <textarea placeholder="Pesan"></textarea><br>
-            </form>
+            <h1 class="contact_taital">Hubungi Kami</h1>
+
+            <input type="text" placeholder="Nama">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Nomor Telepon">
+            <textarea placeholder="Pesan"></textarea>
+
             <div class="main_bt"><a href="#">KIRIM</a></div>
          </div>
       </div>
@@ -215,12 +301,9 @@
       <!-- footer -->
       <div class="copyright_section">
          <div class="container">
-            <p>2020 Hak Cipta Dilindungi</p>
+            <p>2020 Hak Cipta Dilindungi. Desain oleh Free Html Templates</p>
          </div>
       </div>
 
-      <!-- js -->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
    </body>
 </html>
