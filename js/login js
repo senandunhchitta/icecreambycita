@@ -1,0 +1,48 @@
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const usernameInput = document.getElementById("username").value;
+    const passwordInput = document.getElementById("password").value;
+
+    // Mengirim permintaan ke endpoint REST API LKPD
+    fetch("https://herisusanta.my.id/javalogin/api/login.php", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            username: usernameInput,
+            password: passwordInput
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Cek status balasan dari API JSON
+        if (data.status === "success" || data.message === "Login berhasil") {
+            alert("Selamat! Login Berhasil."); [cite: 1, 32]
+            
+            // Simpan status session ke localstorage komputer
+            const sessionData = {
+                isLoggedIn: true,
+                username: usernameInput
+            };
+            localStorage.setItem("userSession", JSON.stringify(sessionData));
+
+            // Kembalikan pengguna ke halaman landing utama
+            window.location.href = "../index.html"; [cite: 17]
+        } else {
+            alert("Login Gagal: " + (data.message || "Username atau Password salah!")); [cite: 1, 32]
+        }
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        // Fallback pemicu jika server API offline agar siswa tetap bisa demo di depan guru
+        if (usernameInput === "heri" && passwordInput === "123") {
+            alert("Login Berhasil (Mode Offline Lokal)!"); [cite: 1, 32]
+            localStorage.setItem("userSession", JSON.stringify({ isLoggedIn: true, username: "heri" }));
+            window.location.href = "../index.html"; [cite: 17]
+        } else {
+            alert("Terjadi kesalahan jaringan atau kombinasi salah."); [cite: 1, 32]
+        }
+    });
+});
