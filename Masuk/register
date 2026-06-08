@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Daftar Akun - Romyk Ice Cream</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+</head>
+<body>
+
+   <div class="materialContainer">
+      <div class="box">
+         <div class="title">REGISTRASI</div>
+
+         <form id="registerForm">
+            <div class="input">
+               <label for="username">Username</label>
+               <input type="text" id="username" name="username" required>
+               <span class="spin"></span>
+            </div>
+
+            <div class="input">
+               <label for="email">Email</label>
+               <input type="email" id="email" name="email" required>
+               <span class="spin"></span>
+            </div>
+
+            <div class="input">
+               <label for="password">Password</label>
+               <input type="password" id="password" name="password" required>
+               <span class="spin"></span>
+            </div>
+
+            <div class="button login">
+               <button type="submit"><span>DAFTAR</span> <i class="fa fa-check"></i></button>
+            </div>
+         </form>
+
+         <p style="text-align: center; margin-top: 20px; font-family: sans-serif; font-size: 14px;">
+            Sudah punya akun? <a href="index.html" style="color: #ed2553; text-decoration: none; font-weight: bold;">Login di sini</a>
+         </p>
+      </div>
+   </div>
+
+   <script src="js/register.js"></script>
+</body>
+</html>
